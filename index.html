@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- Stylesheet -->
+  <style>
+    body {
+      margin: 0;
+      box-sizing: border-box;
+      font-family: 'Red Hat Display', sans-serif;
+      font-size: 14px;
+    }
+    
+    h1  {
+      color: hsl(223, 47%, 23%);
+      margin-top: 30px;
+      margin-bottom: 0;
+    }
+
+    h2 {
+      color: hsl(223, 47%, 23%);
+    }
+
+    p {
+      color: hsl(224, 23%, 55%);
+    }
+
+    .flex-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container-box {
+      background-color: #fff;
+      height: 100vh;
+      background: url(images/pattern-background-desktop.svg) no-repeat, hsl(225, 100%, 94%);
+      background-position: 0 -20px;
+      background-size:contain;
+    }
+    
+    .content-box {
+      background-color: #fff;
+      width: 350px;
+      height: auto;
+      border-radius: 15px;
+      text-align: center;
+      
+      box-shadow: 5px 5px 5px #999;
+    }
+
+    .container-content {
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      width: 300px;
+    }
+
+    .img-topo img {
+      margin: auto;
+      width: 350px;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+
+
+    .plano {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 25px;
+    }
+    .plano--area {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .plano--area img {
+      width: 48px;
+      height: 48px;
+    }
+
+    .valor {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-left: 10px;
+      line-height: 0;
+    }
+
+    .valor h2 {
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    .change a {
+      color: hsl(245, 75%, 52%);
+      font-weight: 700;
+    }
+
+    .change a:hover {
+      text-decoration: none;
+      color: #766CF1;
+    }
+
+    .botao {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 300px;
+      height: 50px;
+      background-color: hsl(245, 75%, 52%);
+      margin-top: 60px;
+      border-radius: 15px;
+    }
+
+    .botao a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 700;
+    }
+
+    .botao:hover {
+      background-color: #766CF1;
+    }
+
+    .cancelorder {
+      margin-top: 30px;
+      margin-bottom: 20px;
+    }
+
+    .cancelorder a {
+      text-decoration: none;
+      color: hsl(224, 23%, 55%);
+      font-weight: 700;
+    }
+
+    .cancelorder a:hover {
+      color: hsl(223, 47%, 23%);
+    }
+    .attribution {
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+
+    
+  </style>
+</head>
+<body>
+  <main class="flex-box container-box">
+    <div class="content-box">
+      <div class="img-topo">
+        <img src="./images/illustration-hero.svg" alt="illustration-hero">
+      </div>
+      
+      <div class="container-content">
+        <h1>Order Summary</h1>
+
+        <p>You can now listen to millions of songs, audiobooks, and podcasts on any 
+          device anywhere you like!</p>
+
+          <div class="plano">
+            <div class="plano--area">
+              <img src="./images/icon-music.svg" alt="icon-music">
+              <div class="valor">
+                <h2>Annual Plan</h2>
+                <p>$59.99/year</p>
+              </div>
+            </div>
+            <div class="change">
+              <a href="">Change</a>
+            </div>
+          </div>
+
+          <div class="botao">
+            <a href="">Proceed to Payment</a>
+          </div>
+
+          <div class="cancelorder">
+            <a href="">Cancel Order</a>
+          </div>
+      </div>
+    </div>
+  
+  
+  
+  </main>
+ <!--
+
+  
+
+  
+  
+
+  Change
+
+  Proceed to Payment
+  Cancel Order
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>--> 
+</body>
+</html>
